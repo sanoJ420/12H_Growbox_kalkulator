@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growkit Kalkulator – 12StundenLicht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="12StundenLicht Logo" class="logo">
+        <h1>Growkit Kalkulator</h1>
+        <label class="switch">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider"></span>
+        </label>
+        <span id="modeLabel">Modus: Basic</span>
+    </header>
+
+    <main>
+        <section class="category">
+            <h2>Growzelt</h2>
+            <select id="zeltSelect">
+                <option value="60x60" data-price="89">60x60 cm – 89€</option>
+                <option value="80x80" data-price="109">80x80 cm – 109€</option>
+                <option value="100x100" data-price="129">100x100 cm – 129€</option>
+            </select>
+        </section>
+
+        <section class="category">
+            <h2>LED-Lampe</h2>
+            <select id="lampeSelect">
+                <option value="Mars Hydro TS600" data-price="85">Mars Hydro TS600 – 85€</option>
+                <option value="Sanlight Q1W" data-price="139">Sanlight Q1W – 139€</option>
+                <option value="Spider Farmer SF1000" data-price="119">Spider Farmer SF1000 – 119€</option>
+            </select>
+        </section>
+
+        <section class="category">
+            <h2>Abluft-Set</h2>
+            <select id="abluftSelect">
+                <option value="PrimaKlima 280" data-price="79">PrimaKlima 280 m³/h – 79€</option>
+                <option value="Can-Fan 420" data-price="99">Can-Fan 420 m³/h – 99€</option>
+            </select>
+        </section>
+
+        <section class="category">
+            <h2>Umluft-Ventilator</h2>
+            <select id="umluftSelect">
+                <option value="Clipfan" data-price="15">Clipfan – 15€</option>
+                <option value="Monkey Fan" data-price="25">Monkey Fan – 25€</option>
+            </select>
+        </section>
+
+        <section id="summary">
+            <h2>Gesamtpreis: <span id="totalPrice">0</span> €</h2>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
